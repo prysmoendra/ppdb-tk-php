@@ -1,0 +1,426 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  flex-direction: row;
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  overflow: hidden;*/
+/*  height: 100vh;*/
+/*  font-family: "Roboto", sans-serif;*/
+/*  transition: 0.8s;*/
+/*  background-image:  linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),url(../images/t-depan.jpg);*/
+/*  background-position: center center;*/
+/*  background-size: cover;*/
+/*  background-color: linear-gradient(rgba(4, 9, 30, 0.8));*/
+}
+
+/*-- SIDEBAR --*/
+.header{
+/*  position: fixed;*/
+  width: 90px;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.6), rgba(4, 9, 30, 0.8)),url(../images/t-depan.jpg);
+  background-position: center;
+  background-size: cover;
+  transition: width 0.7s;
+}
+.side-nav{
+  width: 90px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 30px 15px;
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  transition: width 0.7s;
+}
+.user{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60px;
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+.user div{
+  display: none;
+}
+.user h2{
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.user-img{
+  width: 40px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.logout{
+  list-style: none;
+  padding-top: 300px;
+}
+
+ul{
+  list-style: none;
+  padding: 0 15px;
+}
+
+ul li{
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+ul li img{
+  width: 30px;
+  margin-right: 0;
+}
+ul li p{
+  white-space: nowrap;
+  display: none;
+  text-decoration: none;
+}
+.link-logout{
+  text-decoration: none;
+  color: black;
+}
+.header:hover{
+  width: 250px;
+}
+.side-nav:hover{
+  width: 250px;
+}
+
+.side-nav:hover .user div{
+  display: block;
+}
+.side-nav:hover .user{
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+.side-nav:hover .user-img{
+  margin: 0;
+}
+.side-nav:hover ul li p{
+  display: block;
+}
+.side-nav:hover ul li img{
+  margin-right: 10px;
+}
+.side-nav:hover ul li{
+  justify-content: flex-start;
+}
+.side-nav:hover .made{
+  display: block;
+}
+.made{
+  font-size: 10px;
+  text-align: center;
+  display: none;
+}
+.dakode{
+  color: #f44336;
+}
+
+/*=== CONTENT ===*/
+.main-user{
+  position: relative;
+  padding: 20px;
+  width: 94%;
+/*  height: 100%;*/
+/*  left: 90px;*/
+}
+
+/*--- BIO FORM ---*/
+.main-top{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 97.5%;
+  height: 10vh;
+  background: #ddd;
+/*  padding-right: 25px;*/
+/*  padding-left: 20px;*/
+  padding: 21px;
+  margin: 10px;
+/*  margin-bottom: 1px;*/
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-decoration: none;
+}
+.main-top .btn-user{
+/*  width: 100%;*/
+}
+.btn-user .form-btn{
+  text-decoration: none;
+  color: green;
+  border: 1px solid green;
+  padding: 12px 34px;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer ;
+}
+
+.main-top .login-admin{
+/*  position: absolute;*/
+/*  right: 60px;*/
+/*  top: 20px;*/
+}
+.login-admin .adm-btn{
+  text-decoration: none;
+  color: #f44336;
+  border: 1px solid red;
+  padding: 12px 34px;
+  font-size: 13px;
+  font-weight: 600;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.greeting h2{
+  text-transform: uppercase;
+}
+
+.adm-btn:hover{
+  border: 1px solid #f44336;
+  background: #f44336;
+  transition: 0.5s;
+  color: #fff;
+}
+.form-btn:hover{
+  border: 1px solid green;
+  background: green;
+  transition: 0.5s;
+  color: #fff;
+}
+/*=========== FORMULIR ===========*/
+#forms{
+  max-width: 800px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 0 10px 30px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+#forms .title{
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 2em;
+  line-height: 48px;
+  padding-bottom: 20px;
+  color: #5543ca;
+  background: linear-gradient(to right, #f4524d 0%, #5543ca 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-form .form{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 50px;
+}
+.contact-form .form input{
+    width: 100%;
+    height: 100%;
+    color: black;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+}
+.contact-form .form label{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+.contact-form .form label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 2px solid blueviolet;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: all 0.8s ease;
+}
+.contact-form .form input:focus + .label-name::after,
+.contact-form .form input:valid + .label-name::after{
+    transform: translateX(0%);
+}
+.contact-form .content-name{
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    margin: 2px 0;
+}
+.contact-form .form input:focus + .label-name .content-name,
+.contact-form .form input:valid + .label-name .content-name{
+    transform: translateY(-100%);
+    font-size: 13px;
+    color: blueviolet;
+}
+.contact-form .input-text{
+    display: block;
+    width: 100%;
+    height: 36px;
+    border-width: 0 0 2px 0;
+    border-color: #5543ca;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    font-family: "Arial";
+    text-transform: uppercase;
+}
+.contact-form .form-field{
+    position: relative;
+    margin: 32px 240px;
+}
+.contact-form .form-field .submit-btn{
+    display: inline-block;
+    background-image: linear-gradient(125deg, #a72879, #064497);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 16px;
+    padding: 8px 16px;
+    border: none;
+    width: 200px;
+    cursor: pointer;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+input[type=date]:focus::-webkit-datetime-edit {
+    color: black !important;
+}
+.radiosel{
+  display: flex;
+  width: 100%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    left: 14px;
+}
+.wrapper{
+  display: inline-flex;
+  background: #fff;
+  height: 100px;
+  width: 550px;
+  margin: 18px;
+  margin-left: 203px;
+}
+.wrapper .option{
+  background: #fff;
+  height: 30%;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 0 1px;
+  border: 2px solid lightgrey;
+  transition: all 0.3s ease;
+}
+.wrapper .option span{
+  font-size: 12px;
+  color: #808080;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.wrapper .option .dot{
+  height: 15px;
+  width: 15px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+}
+.wrapper .option .dot::before{
+  position: absolute;
+  content: "";
+  top: 2px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  background: #0069d9;
+  border-radius: 50%;
+  opacity: 0;
+  transform: scale(1.5);
+  transition: all 0.3s ease;
+}
+input[type="radio"]{
+  display: none;
+}
+#option-1:checked:checked ~ .option-1,
+#option-2:checked:checked ~ .option-2{
+  border-color: #0069d9;
+  background: #064497;
+}
+#option-1:checked:checked ~ .option-1 .dot,
+#option-2:checked:checked ~ .option-2 .dot{
+  background: #fff;
+}
+#option-1:checked:checked ~ .option-1 .dot::before,
+#option-2:checked:checked ~ .option-2 .dot::before{
+  opacity: 1;
+  transform: scale(1);
+}
+#option-1:checked:checked ~ .option-1 span, 
+#option-2:checked:checked ~ .option-2 span{
+  color: #fff;
+}
+.select-opt{
+  display: flex;
+  width: 100%;
+  position: relative;
+  height: 50px;
+  overflow: hidden;
+  left: 12px;
+}
+.type-select{
+  border: 2px solid lightgrey;
+  width: 60%;
+  margin: 17px 215px;
+  border-radius: 5px;
+}
+.opt-tvalue{
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  font-family: "Arial";
+  font-size: 14px;
+  text-transform: uppercase;
+}
