@@ -7,7 +7,7 @@
 ![image](https://github.com/user-attachments/assets/215c80cb-bdcc-4571-af2e-b6173baeec44)
 
 ## Formulir Pendaftaran
-![image](https://github.com/user-attachments/assets/b2c0a3f9-29f2-481a-8813-2c260215e58c)
+![image](https://github.com/user-attachments/assets/0f89e7d5-74ec-4620-a3bf-bccc27a2a643)
 
 ## Dashboard Admin
 ![image](https://github.com/user-attachments/assets/f9b11fd5-cc23-4f82-b946-f3f6ea5704f5)
